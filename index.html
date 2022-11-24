@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Harry Ward | Software Engineer</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&amp;display=swap" rel="stylesheet">
+        <link rel="icon" href="./assets/img/headshot.png">
+    </head>
+
+    <body>
+
+        <header class="header">
+            <section class="headerContent">
+                <div class="headerLeft">
+                    <img src="./assets/img/headshot.png" class="headshot" alt="image of me eating spaghetti">
+                    <span class="name">Harry Charles Ward</span>
+                </div>
+                <nav class="headerRight">
+                    <ul class="links">
+                        <li class="home"> <a href="#hero" class="navlink" alt="link to the top of the page"> Home </a> </li>
+                        <li class="about"><a href="#about" class="navlink" alt="link to the about me section of the page"> About </a></li>
+                        <li class="projects"><a href="#project" class="navlink" alt="link to the projects section of the page"> Projects </a></li>
+                        <li class="contact"><a href="#contact" class="navlink" alt="link to the contact section of the page"> Contact </a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="socials">
+                <div class="sociallink">
+                    <a href="https://github.com/HarryWard-15"><img src="./assets/img/github.png" class="icon" alt="image linking to my github"></a>
+                </div>
+                <div class="sociallink">
+                    <a href="https://www.linkedin.com/in/harryward00/"><img src="./assets/img/linkedin.png" class="icon" alt="image linking to my linkedin"></a>
+                </div>
+                <div class="sociallink">
+                    <a href="https://twitter.com/Hward1508"><img src="./assets/img/twitter.png" class="icon" alt="image linking to my twitter"></a>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="hero" id="hero">
+                <img class="heroimg" src="./assets/img/bg1.jpg" alt="geometic background image">
+                <div class="heroContent">
+                    <h1 class="header1">Hey, I'm Harry Ward</h1>
+                    <p class="subheader">A Full-Stack Developer in training, currently enrolled in UWA's Coding Bootcamp to further my developer toolkit.</p>
+                    <div class="herobutton">
+                        <a href="#project" class="button buttonbg" alt="button to skip to projects section of the webpage">PROJECTS</a>
+                    </div>
+                </div>
+            </section>
+            <section class="mousescroll">
+                <div class="mouse"></div>
+            </section>
+
+            <section class="aboutme" id="about">
+                <h2 class="h2">ABOUT ME</h2>
+                <p>Here you will find a little background on me, my hobbies, and skills relating to the Software Development field!</p>
+                <section class="aboutcontent">
+                    <div class="aboutleft">
+                        <h3>More about me!</h3>
+                        <span>Hi! I'm Harry, a <strong>Full-Stack Developer</strong>. Currently focusing on Front-end web development and web applications. If you scroll further down you will see my <a href="#project" alt="link to projects section of the webpage">Projects</a> section, and be able to view some past and current work!</span>
+                        <span>I'm currently living in <strong>Perth Australia</strong>, studying full-time at <strong>The University of Western Australia</strong>, majoring in finance. To find more about my work experience and eduction please feel free to have a look at my <a href="https://www.linkedin.com/in/harryward00/" alt="link to my linkedin page">LinkedIn</a></span>
+                        <span>As I'm new to the developer world, I am always looking for <strong>Job</strong> opportunities and any advise is welcome! With any questions or queries please do not hesitate to <a href="#contact" alt="link to contact section of webpage">Contact Me!</a></span>
+                    </div>
+                    <div class="aboutright">
+                        <h3>My Skills</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>GIT</li>
+                            <li>GitHub</li>
+                            <li>Responsive Design</li>
+                            <li>SEO</li>
+                            <li>More Coming Soon!</li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+
+            <section class="project" id="project">
+                <h2 class="h2">PROJECTS</h2>
+                <section class="projectmain">
+                    <a href="https://harryward-15.github.io/challenge01/"><img src="./assets/img/project1.PNG" alt="image linking to my main portfolio project"></a>
+                </section>
+                <div class="projectss">
+                    <section class="projectsmall">
+                        <a href="https://harryward-15.github.io/Harrielle/"><img src="./assets/img/project2.PNG" alt="coming soon image"></a>
+                    </section>
+                    <section class="projectsmall">
+                        <img src="./assets/img/comingsooon.jpg" alt="coming soon image">
+                    </section>
+                    <section class="projectsmall">
+                        <img src="./assets/img/comingsooon.jpg" alt="coming soon image">
+                    </section>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <img class="heroimg" src="./assets/img/bg1.jpg">
+                <h2 class="h2">CONTACT</h2>
+                <section class="contactform">
+                    <form class="contact__form" method="POST" action="mailto:hward.1508@gmail.com" enctype="multipart/form-data" alt="this is a contact me form">
+                        <input type="hidden" name="form-name" value="form-1">
+                        <div class="forminput">
+                            <label class="contactlabel">Name</label>
+                            <input required placeholder="Enter Your Name" type="text" class="contactforminput" id="name" name="name" alt="enter your name">
+                        </div>
+                        <div class="forminput">
+                            <label class="contactlabel">Email</label>
+                            <input required placeholder="Enter Your Email" type="email" class="contactforminput" id="email" name="email" alt="enter your email">
+                        </div>
+                        <div class="forminput">
+                            <label class="contactlabel">Message</label>
+                            <textarea required cols="20" rows="5" placeholder="Enter Your Message" type="text" class="contactforminput" id="message" name="message" alt="enter your message"></textarea>
+                        </div>
+                        <button type="submit" form="contact__form" class="formbutton" value="Send" alt="submit your message">SUBMIT</button>
+                    </form>
+                </section>
+            </section>
+        </main>
+
+    </body>
+
+    <footer class="footer">
+        <section class="footerbox">
+            <section class="footertop">
+                <div class="footerleft">
+                    <h2>Harry Charles Ward</h2>
+                    <p>A Full-Stack Developer in training, currently enrolled in UWA's Coding Bootcamp to further my developer toolkit.</p>
+                </div>
+                <div class="footerright">
+                    <h2>Social</h2>
+                    <a href="https://twitter.com/Hward1508"><img src="./assets/img/wtwitter.png" alt="image linking to my twitter"></a>
+                    <a href="https://github.com/HarryWard-15"><img src="./assets/img/wgithub.jpg" alt="image linking to my github"></a>
+                    <a href="https://www.linkedin.com/in/harryward00/"><img src="./assets/img/wlinked.jpg" alt="image linking to my linkedin"></a>
+                </div>
+            </section>
+            <section class="footerbottom">
+                <p>© Copyright 2022. Made by Harry Ward</p>
+            </section>
+        </section>
+    </footer>
+
+</html>
