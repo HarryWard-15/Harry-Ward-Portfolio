@@ -234,11 +234,11 @@ div {
     font-family: inherit;
     letter-spacing: 5px;
     color: #111;
-    margin-bottom: 5%;
+    margin-bottom: 3rem;
     padding-top: 15rem;
 }
 
-.aboutme h2::after {    /*adding the little orange dash under the header*/
+/* .aboutme h2::after {    
     position: absolute;
     border: 2px solid #fd9f53;
     background: #fd9f53;
@@ -249,7 +249,7 @@ div {
     left: 50%;
     transform: translateX(-50%);
     top: 27vh;
-}
+} */
 
 .aboutme p { /*changling color, size and positioning of the sentence under about me*/
     font-family: inherit;
@@ -262,6 +262,7 @@ div {
     max-width: 80rem;
     margin: auto;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .aboutcontent { /*creating the container around the more about me and my skills so it is easier to move and position*/
@@ -334,11 +335,11 @@ span a { /*styling the links within the more about me section*/
     font-family: inherit;
     letter-spacing: 5px;
     color: #111;
-    margin-bottom: 5%;
+    margin-bottom: 3rem;
     padding-top: 15rem;
 }
 
-.project h2::after {/*adding the little orange dash under the header*/
+/* .project h2::after {
     position: absolute;
     border: 2px solid #fd9f53;
     background: #fd9f53;
@@ -349,7 +350,7 @@ span a { /*styling the links within the more about me section*/
     left: 50%;
     transform: translateX(-50%);
     top: 228vh;
-}
+} */
 
 .projectmain img { /*adjusting the size of the main project img*/
     display: block;
@@ -475,6 +476,17 @@ textarea { /*gets rid of the corner where you can resize the message box (really
     padding: 1.5rem 4rem;
     border: none;
     margin: auto;
+}
+hr {
+    position: absolute;
+    border: 2px solid #fd9f53;
+    background: #fd9f53;
+    border-radius: 10px ;
+    height: 5px;
+    width: 5%;
+    margin-bottom: 2rem;
+    left:50%;
+    transform: translateX(-50%);
 }
 
 .formbutton:hover { /*adding the bounce animations when you hover on the submit button*/
