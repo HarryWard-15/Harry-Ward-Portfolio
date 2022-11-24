@@ -1,11 +1,11 @@
-* {
+* { /* setting standard font and sizing for whole page*/
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: inherit;  
     font-family: inherit;
 }
 
-body {
+body { /*changing the line height, font and positioning of the main body*/
     box-sizing: border-box;
     position: relative;
     line-height: 1.5;
@@ -15,10 +15,10 @@ body {
 }
 
 header {
-    display: block;
+    display: block;  /*change the display type of the header*/
 }
 
-.header {
+.header {   /*adding the shadow effect to the header and using zindex to bring it to the front*/
     position: fixed;
     width: 100%;
     background: #fff;
@@ -26,7 +26,7 @@ header {
     z-index: 1;
 }
 
-.name {
+.name { /*styling my name to the size and position i like*/
     font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: 800;
@@ -34,14 +34,14 @@ header {
     padding-left: 20px;
 }
 
-.headerContent {
+.headerContent { /* pushing the different part of the header to the edges using flex, and centering them vertically*/
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 5rem;
 }
 
-.headerLeft {
+.headerLeft { /*change the text color and adding a transition color*/
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -49,21 +49,21 @@ header {
     transition: color .3s;
 }
 
-ul {
+ul { /* poistioniung the nav bar*/
     display: block;
     list-style-type: disc;
     padding-inline-start: 40px;
 }
 
-.links {
+.links { /* postioning the links and making them side by side*/
     display: flex;
 }
 
-li {
+li { /*getting rid of the underline and dotpoints*/
     list-style: none;
 }
 
-.navlink {
+.navlink { /* adding a transition and moving the nav bar around to where necessary*/
     padding: 2.2rem 2rem;
     display: inline-block;
     font-size: 1.6rem;
@@ -75,7 +75,7 @@ li {
     align-items: center;
 }
 
-.headshot {
+.headshot { /*scaling the image in the top left*/
     width: 5%;
     height: 5%;
     min-width: 80px;
@@ -84,16 +84,16 @@ li {
     display: block;
 }
 
-a {
+a { /*getting rid of the underline hyper link*/
     text-decoration: none;
 }
 
-li a:hover {
+li a:hover {  /*adding the hover effect the the nav bar*/
     color: #fd9f53;
     transition: color 0.3s;
 }
 
-.socials {
+.socials {  /*moving the socials bar on the left of the screen and adding shadow*/
     position: absolute;
     transform: translateY(150%);
     background: #fff;
@@ -101,16 +101,16 @@ li a:hover {
     padding: 0.5rem;
 }
 
-.sociallink {
+.sociallink { /*changing the width of the socaisl bar*/
     width: 5rem;
 }
 
-.icon {
+.icon { /* sizing the images withing the socials bar*/
     max-width: 3rem;
     margin: 1rem;
 }
 
-.hero {
+.hero {  /*setting the size and color for the landing page */
     color: #fff;
     width: 100%;
     min-height: 80rem;
@@ -119,12 +119,12 @@ li a:hover {
     background-position: center;
 }
 
-.heroimg {
+.heroimg { /*changing the opacity of the bg image and height so it covers the screen*/
     opacity: 0.5;
     height: 100vh;
 }
 
-.heroContent {
+.heroContent { /*moving the content so it overlays the bg img*/
     position: absolute;
     top: 50%;
     left: 50%;
@@ -133,7 +133,7 @@ li a:hover {
     width: 92%;
 }
 
-.header1 {
+.header1 { /*styling the first header with size, color and boldness*/
     font-size: 6rem;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -142,7 +142,7 @@ li a:hover {
     font-weight: 800;
 }
 
-.subheader {
+.subheader {/*styling the caption with size, color and boldness*/
     color:#111;
     font-size: 2.2rem;
     text-align: center;
@@ -152,14 +152,14 @@ li a:hover {
     max-width: 80%;
 }
 
-.mousescroll {
+.mousescroll {/*moving the mouse scrolling animation*/
     position: absolute;
     top: 80rem;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.mouse {
+.mouse {/*adjusting the size of the mouse scrolling animation*/
     width: 25px;
     height: 50px;
     border: 2px solid black;
@@ -168,7 +168,7 @@ li a:hover {
     overflow: hidden;
 }
 
-.mouse::before {
+.mouse::before { /*creating the mouse scrolling animation*/
     content: "";
     width: 5px;
     height: 5px;
@@ -180,17 +180,17 @@ li a:hover {
     border-radius: 50%;
     animation: mouse 1.5s infinite;
 }
-.herobutton {
+.herobutton { /*styling the projects button on the landing page*/
     margin-top: 6rem;
     text-align: center;
 }
 
-.buttonbg {
+.buttonbg {/*styling the projects button on the landing page*/
     padding: 1.5rem 8rem;
     font-size: 2rem;
 }
 
-.button {
+.button {/*styling the projects button on the landing page*/
     display: inline-block;
     font-weight: 800;
     background: #fd9f53;
@@ -201,7 +201,7 @@ li a:hover {
     transition: transform 0.3s;
 }
 
-.button:hover {
+.button:hover { /*adding the bounce effect to the button*/
     transform: translateY(-8px);
 }
 
@@ -209,24 +209,24 @@ div {
     display: block;
 }
 
-*, ::after, ::before {
+*, ::after, ::before { /*universal stlying for before andf after*/
     margin: 0;
     padding: 0;
     box-sizing: inherit;
     font-family: inherit;
 }
 
-.name:hover {
+.name:hover {   /*adding the color change to my name (purely aesthetic*/
     color:#fd9f53;
     transition: color 0.3s;
 }
 
-.aboutme {
+.aboutme { /*moving the about mne section so there isnt a gap and change the bg color*/
     background: #fafafa;
     transform: translateY(-10px);
 }
 
-.aboutme h2 {
+.aboutme h2 { /*adjusting the h2 tag within the aboutme section*/
     font-size: 4.5rem;
     font-weight: 650;
     text-align: center;
@@ -237,7 +237,7 @@ div {
     padding-top: 15rem;
 }
 
-.aboutme h2::after {
+.aboutme h2::after {    /*adding the little orange dash under the header*/
     position: absolute;
     border: 2px solid #fd9f53;
     background: #fd9f53;
@@ -250,7 +250,7 @@ div {
     top: 27vh;
 }
 
-.aboutme p {
+.aboutme p { /*changling color, size and positioning of the sentence under about me*/
     font-family: inherit;
     font-size: 2rem;
     color: #333;
@@ -263,25 +263,25 @@ div {
     margin-bottom: 2rem;
 }
 
-.aboutcontent {
+.aboutcontent { /*creating the container around the more about me and my skills so it is easier to move and position*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 15vh;
 }
 
-.aboutleft {
+.aboutleft {    /*setting size limits for the more about me section*/
     max-width: 25%;
     margin-right: 10rem;
 }
 
-.aboutleft h3 {
+.aboutleft h3 { /*ajusitng size of the more about me */
     font-weight: 700;
     font-size: 2.8rem;
     margin-bottom: 3rem;
 }
 
-.aboutleft span {
+.aboutleft span { /*styling the 3 spans in the more about me section, size and display type etc*/
     font-family: inherit;
     font-size: 1.6rem;
     color: #333;
@@ -293,29 +293,29 @@ div {
     margin-bottom: 2rem;
 }
 
-span a {
+span a { /*styling the links within the more about me section*/
     color: #fd9f53;
     font-weight: bolder;
     text-decoration: underline;
 }
 
-.aboutright {
+.aboutright { /*setting max width for the my skills*/
     max-width: 25%;
 }
 
-.aboutright h3 {
+.aboutright h3 { /*styling adn shifting the my skills hjeader*/
     font-weight: 700;
     font-size: 2.8rem;
     margin-bottom: 3rem;
     text-indent: 4rem;
 }
 
-.aboutright ul {
+.aboutright ul { /*making the skills area flex wrap so it fits nicely in the area*/
     display: flex;
     flex-wrap: wrap;
 }
 
-.aboutright ul li {
+.aboutright ul li { /*styling the skills so they have the grey box spacing*/
     padding: 1rem 2rem;
     margin-bottom: 2.5rem;
     margin-right: 1.5rem;
@@ -326,7 +326,7 @@ span a {
     color: #666;
 }
 
-.project .h2 {
+.project .h2 { /*changing the color and size of the header for projects*/
     font-size: 4.5rem;
     font-weight: 650;
     text-align: center;
@@ -337,7 +337,7 @@ span a {
     padding-top: 15rem;
 }
 
-.project h2::after {
+.project h2::after {/*adding the little orange dash under the header*/
     position: absolute;
     border: 2px solid #fd9f53;
     background: #fd9f53;
@@ -350,21 +350,21 @@ span a {
     top: 228vh;
 }
 
-.projectmain img {
+.projectmain img { /*adjusting the size of the main project img*/
     display: block;
     width: 50%;
     margin: auto;
     opacity: 0.5;
 }
 
-.projectmain img:hover {
+.projectmain img:hover { /*creating the animation for making the image grow when you hover*/
     scale: 1.02;
     transition: scale 0.3s;
     opacity: 1;
     transition: opacity 0.3s;
 }
 
-.projectss {
+.projectss {  /*coloring and adding flex to the smaller projects so the wrap nicely*/
     background: #fff;
     display: flex;
     flex-wrap: wrap;
@@ -374,25 +374,25 @@ span a {
     padding: 5rem;
 }
 
-.projectsmall {
+.projectsmall { /*  setting the max ssize for the small project images*/
     margin: 2rem;
     max-width: 20%;
 }
 
-.projectsmall img {
+.projectsmall img {/*adjusting the size of the other project images*/
     max-width: 100%;
     border: 2px solid black;
     opacity: 0.5;
 }
 
-.projectsmall img:hover {
+.projectsmall img:hover {/*creating the animation for making the image grow when you hover*/
     scale: 1.05;
     transition: scale 0.5s;
     opacity: 1;
     transition: opacity 0.5s;
 }
 
-.contact h2 {
+.contact h2 {  /* moving, sizing and coloring the header for the contact me page*/
     font-size: 4.5rem;
     font-weight: 650;
     text-align: center;
@@ -407,7 +407,7 @@ span a {
     transform: translateX(-50%);
 }
 
-.contact h2::after {
+.contact h2::after {/*adding the little orange dash under the header*/
     position: absolute;
     border: 2px solid #fd9f53;
     background: #fd9f53;
@@ -420,7 +420,7 @@ span a {
     top: 25vh;
 }
 
-form {
+form { /*styling the contactme form with the shadow, size and positions*/
     display: block;
     max-width: 50%;
     min-width: 40%;
@@ -436,7 +436,7 @@ form {
     box-shadow: rgb(100 100 111 / 20%) 0 10px 29px 0;
 }
 
-.contactlabel {
+.contactlabel {/*color and sizing, also left aligning the name, email and messgae labels*/
     color: #666;
     font-size: 1.6rem;
     letter-spacing: 1px;
@@ -446,7 +446,7 @@ form {
     text-align: left;
 }
 
-.contactforminput {
+.contactforminput { /*adding the box for the inputs so it is different from the rest of the form.*/
     color:#333;
     padding: 2rem;
     width: 100%;
@@ -459,11 +459,11 @@ form {
     margin-bottom: 4rem;
 }
 
-textarea {
+textarea { /*gets rid of the corner where you can resize the message box (really annoying otherwise)*/
     resize: none;
 }
 
-.formbutton {
+.formbutton { /*styling the submit button at the bottom of the page*/
     font-weight: 800;
     background: #fd9f53;
     color: #333;
@@ -476,79 +476,80 @@ textarea {
     margin: auto;
 }
 
-.formbutton:hover {
+.formbutton:hover { /*adding the bounce animations when you hover on the submit button*/
     transform: translateY(-3px); 
 }
 
-footer {
+footer { /*bg color and text color for the footer*/
     background: #000;
     color:#fff;
 }
 
-.footerbox {
+.footerbox { /*making the footer not the full width of the page*/
     max-width: 120rem;
     margin: auto;
     width: 92%;
 }
 
-.footertop {
+.footertop { /*pushing the two parts of the flex box to either end and adding the grey line at the bottom*/
     display: flex;
     justify-content: space-between;
     padding: 8rem 0;
     border-bottom: solid #333;
 }
 
-.footerleft {
+.footerleft { /* seeting max width and default width for the left part of the footer*/
     width: 40%;
     max-width: 50rem;
 }
 
-.footerright h2 {
+.footerright h2 { /*styling the h2 header on the right*/
     font-size: 2.2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.footerleft h2 {
+.footerleft h2 {/*styling the h2 header on the left*/
     font-size: 2.2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.footerright a img {
+.footerright a img { /*postitioning and sizing the little images in the footer that link to my socials*/
     margin-top: 2rem;
     width: 2.5rem;
     margin-right: 1rem;
 }
 
-.footerleft p {
+.footerleft p { /*sizing the passage under the left header*/
     margin-top: 2rem;
     font-size: 1.5rem;
     line-height: 1.7;
 }
 
-.footerbottom {
+.footerbottom { /*center aligning and sizing the texts below the fainy grey line*/
     text-align: center;
     font-size: 1.6rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { /*scaling all of the text sizes down when viewing on a small device,*/
     html {
         font-size: 50%;
         scroll-behavior: smooth;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) { /*accidentally had this on when coding the whole thing, had min-width instead of max-width, so without this all of the text looks massive so decided to keep it in 
+    rather than changeing everything. also adds the smooth scrolling animation when you navigate within the page*/
     html {
         font-size: 65%;
         scroll-behavior: smooth;
     }
 }
 
-@keyframes transform {
+@keyframes transform { /*animation for moving buttons*/
     from{
         bottom: 10px;
     }
@@ -557,7 +558,7 @@ footer {
     }
 }
 
-@keyframes mouse {
+@keyframes mouse { /*animation for the little dot moving downwards on the landing page (mouse scroller)*/
     from{
         opacity: 1;
         bottom: 50px;
