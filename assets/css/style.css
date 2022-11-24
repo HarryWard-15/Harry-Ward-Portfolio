@@ -355,11 +355,11 @@ span a { /*styling the links within the more about me section*/
     width: 50%;
     margin: auto;
     opacity: 0.5;
+    transition: all 0.3s ease-in-out;
 }
 
 .projectmain img:hover { /*creating the animation for making the image grow when you hover*/
-    scale: 1.02;
-    transition: scale 0.3s;
+    transform: scale(1.03);
     opacity: 1;
     transition: opacity 0.3s;
 }
@@ -383,11 +383,11 @@ span a { /*styling the links within the more about me section*/
     max-width: 100%;
     border: 2px solid black;
     opacity: 0.5;
+    transition: all 0.3s ease-in;
 }
 
 .projectsmall img:hover {/*creating the animation for making the image grow when you hover*/
-    scale: 1.05;
-    transition: scale 0.5s;
+    transform: scale(1.05);
     opacity: 1;
     transition: opacity 0.5s;
 }
@@ -568,3 +568,4 @@ footer { /*bg color and text color for the footer*/
         top: 30px;
     }
 }
+
