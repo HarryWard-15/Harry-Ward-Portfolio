@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="./assets/css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&amp;display=swap" rel="stylesheet">
         <link rel="icon" href="./assets/img/headshot.png">
+        <!-- <script src="./assets/js/index.js"></script> -->
     </head>
 
     <body>
@@ -44,6 +45,9 @@
                     <h1 class="header1">Hey, I'm Harry Ward</h1>
                     <p class="subheader">A Full-Stack Developer and Problem Solver</p>
                     <div class="herobutton">
+                        <a href="https://github.com/HarryWard-15/HarryWard-15/raw/main/resume.pdf" class="button buttonbg" alt="button to download my resume">DOWNLOAD MY RESUME</a> 
+                        <br/>
+                        <br/>
                         <a href="#project" class="button buttonbg" alt="button to skip to projects section of the webpage">PROJECTS</a>
                     </div>
                 </div>
@@ -95,19 +99,66 @@
                 <hr></br></br></br>
                 <section class="projectmain">
                     <a href="https://outnabout.herokuapp.com/"><img src="./assets/img/project1.PNG" alt="image linking to my main portfolio project"></a>
+
+                    <div class="project-text">
+                        <h2>Out & About</h2>
+                        <br/>
+                        <p>Out & About is my most recent and largest project. It is currently deployed on heroku and can be viewed by clicking the image above. The project uses the MERN stack and features a game type app in which the user is encouraged to get Out & About!</p>
+                        <br/>
+                        <a href="https://github.com/HarryWard-15/out-n-about" class="button buttonbg" alt="button to skip to projects section of the webpage">REPO</a>
+                    </div>
                 </section>
-                <div class="projectss">
-                    <section class="projectsmall">
-                        <a href="https://github.com/caoimhejyoti/buddy-up"><img src="./assets/img/project2.PNG" alt="coming soon image"></a>
-                    </section>
-                    <section class="projectsmall">
-                        <a href="https://harryward-15.github.io/Pumping-Party_Planner/"><img src="./assets/img/project3.png" alt="links to my password generator"></a>
-                    </section>
-                    <section class="projectsmall">
-                        <img src="./assets/img/comingsooon.jpg" alt="coming soon image">
-                    </section>
-                </div>
             </section>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <a href="https://buddy-up-project.herokuapp.com/"><img src="./assets/img/project2.PNG" style="width:100%"></a>
+                </div>
+            
+                <div class="mySlides fade">
+                    <a href="https://citizen-cypher.herokuapp.com/"><img src="./assets/img/loggedin.png" style="width:100%"></a>
+                </div>
+
+                <div class="mySlides fade">
+                    <a href="https://harryward-15.github.io/pumping-party-planner/"><img src="./assets/img/project3.png" style="width:100%"></a>
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div class="dots" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <div class="project-text-small">
+                <h2>Buddy Up</h2>
+                <br/>
+                <p>Buddy Up is my second largest project. It is currently deployed on heroku and can be viewed by clicking the image above. The project uses the MVC model, with the database being MySQL and handlebars.js for the views.</p>
+                <br/>
+                <a href="https://github.com/HarryWard-15/buddy-up" class="button buttonbg" alt="link to repo">REPO</a>
+            </div>
+            <div class="project-text-small">
+                <h2>Citizen Cypher</h2>
+                <br/>
+                <p>Citizen Cypher is a smaller project writtin in Python, utilizing Flask for the backend. Please click the image above to view the github repo and for instructions on how to run the application. The database is held on ClearDB in MySQL.</p>
+                <br/>
+                <a href="https://github.com/HarryWard-15/Citizen-Cypher" class="button buttonbg" alt="link to repo">REPO</a>
+            </div>
+            <div class="project-text-small">
+                <h2>Pumping Party Planner</h2>
+                <br/>
+                <p>Pumping Party Planner is my first and smallest project. I have included it here to show my steep learning curve over a short timespan to demonstrate my capabilities to learn new languages and concepts if need be. It is purely a front end application that makes external API calls.</p>
+                <br/>
+                <a href="https://github.com/HarryWard-15/pumping-party-planner" class="button buttonbg" alt="link to repo">REPO</a>
+            </div>
+
 
             <section class="contact" id="contact">
                 <img class="heroimg" src="./assets/img/bg1.jpg">
@@ -115,8 +166,7 @@
                 <section class="contactform">
                     <form class="contact__form" method="POST" action="mailto:hward.1508@gmail.com" enctype="multipart/form-data" alt="this is a contact me form">
                         <input type="hidden" name="form-name" value="form-1">
-                        <button type="submit" form="contact__form" class="formbutton" value="Send" alt="submit your message"><a href="mailto:hward.1508@gmail.com?subject=Harry Ward's Portfolio">Send Me An Email!</a></button>
-                    </form>
+                        <button type="submit" form="contact__form" class="formbutton" value="Send" alt="submit your message"><a href="mailto:hward.1508@gmail.com?subject=Harry Ward's Portfolio">Send Me An Email!</a></button>                    </form>
                 </section>
             </section>
         </main>
@@ -142,5 +192,6 @@
             </section>
         </section>
     </footer>
+    <script src="./assets/js/index.js"></script>
 
 </html>

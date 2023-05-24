@@ -225,6 +225,7 @@ div {
 .aboutme { /*moving the about mne section so there isnt a gap and change the bg color*/
     background: #fafafa;
     transform: translateY(-10px);
+    height: 100vh;
 }
 
 .aboutme h2 { /*adjusting the h2 tag within the aboutme section*/
@@ -352,19 +353,23 @@ span a { /*styling the links within the more about me section*/
     top: 228vh;
 } */
 
+.project-text, .project-text-small {
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    padding: 5rem;
+    width: 55%;
+}
+.invisible {
+    display: none;
+}
+
 .projectmain img { /*adjusting the size of the main project img*/
     display: block;
     width: 50%;
     margin: auto;
-    opacity: 0.5;
-    transition: all 0.3s ease-in-out;
 }
 
-.projectmain img:hover { /*creating the animation for making the image grow when you hover*/
-    transform: scale(1.03);
-    opacity: 1;
-    transition: opacity 0.3s;
-}
 
 .projectss {  /*coloring and adding flex to the smaller projects so the wrap nicely*/
     background: #fff;
@@ -401,7 +406,6 @@ span a { /*styling the links within the more about me section*/
     font-family: inherit;
     letter-spacing: 5px;
     color: #111;
-    margin-bottom: 5%;
     padding-top: 20rem;
     position: absolute; 
     bottom: 105vh;
@@ -556,6 +560,97 @@ footer { /*bg color and text color for the footer*/
     font-size: 1.6rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 40%;
+  position: relative;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 @media only screen and (max-width: 768px) { /*scaling all of the text sizes down when viewing on a small device,*/
